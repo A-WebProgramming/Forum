@@ -18,3 +18,4 @@
 <p>-Home sebagai Tampilan Utama Website kami.</p>
 <p>-Category Sebagai catagori berita/ informasi yang anda inginkan.</p>
 <p>-Contact Untuk menghubungi & bertanya seputar informasi kami serta email dan contak aktif yang dapat menghubungi kami.</p>
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
