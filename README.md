@@ -19,4 +19,5 @@
 <p>-Category Sebagai catagori berita/ informasi yang anda inginkan.</p>
 <p>-Contact Untuk menghubungi & bertanya seputar informasi kami serta email dan contak aktif yang dapat menghubungi kami.</p>
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
-<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social"><img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social">
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
