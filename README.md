@@ -15,10 +15,11 @@ Nama Kelompok :
 
 <p>Tujuan :</p>
 <p>Tujuan nya agar pengguna dapat mencari berita/informasi dan mendapatkan berita/informasi yang terupdate.</p>
+
 <pre>
-di website kami akan ada Menu :</p>
--Home sebagai Tampilan Utama Website kami.</p>
--Category Sebagai catagori berita/ informasi yang anda inginkan.</p>
+di website kami akan ada Menu :
+-Home sebagai Tampilan Utama Website kami.
+-Category Sebagai catagori berita/ informasi yang anda inginkan.
 -Contact Untuk menghubungi & bertanya seputar informasi kami serta email dan contak aktif yang dapat menghubungi kami.</p>
 </pre>
 
