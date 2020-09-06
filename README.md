@@ -25,6 +25,7 @@ di website kami akan ada Menu :
 
 <p align="center">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
 </p>
 
 <p align="center">
