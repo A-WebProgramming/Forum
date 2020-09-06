@@ -13,7 +13,7 @@ Nama Kelompok :
 
 <p>Kami ingin membuat Website Forum yang disana akan memberikan Infomasi seputar Berita dan Infomasi yang sedang hangat - hangatnya dibicarakan saat ini.</p>
 
-<h2>Tujuan<h2>
+<h2>Tujuan</h2>
 <p>Tujuannya agar pengguna dapat mencari berita/informasi dan mendapatkan berita/informasi yang terupdate.</p>
 
 <pre>
