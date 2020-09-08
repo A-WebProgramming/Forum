@@ -11,11 +11,14 @@ Nama Kelompok :
 
 <h1 align="center">Forum</h1> 
 
-<p>Kami ingin membuat Website Forum yang disana akan memberikan Infomasi seputar Berita dan Infomasi yang sedang hangat - hangatnya dibicarakan saat ini.</p>
+<h2>Tujuan :</h2>
+<pre>
+1) Mempermudah orang mecari informasi & topik yang di-ingin oleh Pengguna (User).
+2) Setiap pengguna (User) dapat berkenalan dan membagi setiap pengalaman dan informasi kepada setiap pengguna(User) lainnya.
+3) Kami ingin memperkecil biaya advertising , dengan adanya forum ini dari berbagai macam pengguna tentu ini sangat membantu orang yang yang baru ingin membuka usaha (Start-Up). 
+</pre>
 
-<h2>Tujuan</h2>
-<p>Tujuannya agar pengguna dapat mencari berita/informasi dan mendapatkan berita/informasi yang ter-update.</p>
-
+<h2>Fitur Forum :</h2>
 <pre>
 -Multiple Chat
 -Embed Google Maps, Youtube , SoundCloud, Instagaram dan komunikasi lainnya.
