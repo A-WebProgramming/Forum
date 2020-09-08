@@ -15,7 +15,8 @@ Nama Kelompok :
 <pre>
 1) Mempermudah orang mecari informasi & topik yang di-ingin oleh Pengguna (User).
 2) Setiap pengguna (User) dapat berkenalan dan membagi setiap pengalaman dan informasi kepada setiap pengguna(User) lainnya.
-3) Kami ingin memperkecil biaya advertising , dengan adanya forum ini dari berbagai macam pengguna tentu ini sangat membantu orang yang yang baru ingin membuka usaha (Start-Up). 
+3) Kami ingin memperkecil biaya advertising , dengan adanya forum ini dari berbagai macam pengguna 
+   tentu ini sangat membantu orang yang yang baru ingin membuka usaha (Start-Up). 
 </pre>
 
 <h2>Fitur Forum :</h2>
