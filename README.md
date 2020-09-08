@@ -21,9 +21,9 @@ Nama Kelompok :
 
 <h2>Fitur Forum :</h2>
 <pre>
--Multiple Chat
--Embed Google Maps, Youtube , SoundCloud, Instagaram dan komunikasi lainnya.
--Sistem Notifikasi
+1) Multiple Chat
+2) Embed Google Maps, Youtube , SoundCloud, Instagaram dan komunikasi lainnya.
+3) Sistem Notifikasi
 </pre>
 
 <p align="center">
