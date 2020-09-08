@@ -17,10 +17,9 @@ Nama Kelompok :
 <p>Tujuannya agar pengguna dapat mencari berita/informasi dan mendapatkan berita/informasi yang ter-update.</p>
 
 <pre>
-di website kami akan ada Menu :
--Home sebagai Tampilan Utama Website kami.
--Category Sebagai catagori berita/ informasi yang anda inginkan.
--Contact Untuk menghubungi & bertanya seputar informasi kami serta email dan contak aktif yang dapat menghubungi kami.</p>
+-Multiple Chat
+-Embed Google Maps, Youtube , SoundCloud, Instagaram dan komunikasi lainnya.
+-Sistem Notifikasi
 </pre>
 
 <p align="center">
