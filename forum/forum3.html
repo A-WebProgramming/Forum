@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hibiscus</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- BOOTSTRAP SCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- BOXICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" width="30" height="30" alt=""> H|ibiscus</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="../form/form.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true" style="height: 40px; margin-top: 6px; position: relative;">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg>
+                            Sign In</a>
+                  </form>
+            </div>
+          </nav>
+
+       <!-- Question and Listing -->
+       <div class="container-fluid mt-100">
+        <div class="d-flex flex-wrap justify-content-between">
+            <p>
+                <br>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                    </svg> New Thread
+                </button>
+            </p>
+            
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body" style="margin-left: 250px; margin-right: 500px;">
+                    <div class="card">
+                        <h5 class="card-header" style="width: 1040px;"><center>New Thread</center></h5>
+                        <div class="card-body">
+                          <!-- Title -->
+                          <h5 class="card-title">Title</h5>
+                          <input type="text" placeholder="" style="width: 1000px;"><br>
+                          <hr>
+                          <!-- Category    -->
+                          <h5 class="card-title">Category</h5>
+                          <div class="form-group">
+                            <select class="custom-select" required>
+                                <option value=""> > Select Category Thread</option>
+                                <option value="1">Discussion</option>
+                                <option value="2">Question</option>
+                                <option value="3">Pool</option>
+                                <option value="4">Galery</option>
+                                <option value="5">Video</option>
+                                <option value="6">Other</option>
+                            </select>
+                          </div>
+                          <hr>
+                          <!-- Thread Body -->
+                          <h5 class="card-title">Thread Body</h5>
+                            <img src="../assets/Thread Body/font-family-regular.png" title="Font Family" alt="Font Family" style="width: 20px; height: 20px;">
+                          <select>
+                            <option value="">Calibri</option>
+                            <option value="1">Agency FB</option>
+                            <option value="2">Arial</option>
+                            <option value="3">Arial Black</option>
+                            <option value="4">Calibri</option>
+                            <option value="5">Calibri Light</option>
+                            <option value="6">Roman</option>
+                          </select>
+                            <img src="../assets/Thread Body/font-size-regular.png" title="Font Size" alt="Font Size" style="width: 20px; height: 20px;">
+                          <select>
+                            <option value="">12</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="20">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="41">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                          </select>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/heading-regular.png" title="Heading" alt="Heading" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/list-ul-regular.png" title="Bullets" alt="Bullets" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/list-ol-regular.png" title="Numbering" alt="Numbering" style="width: 20px; height: 20px;">
+                          </a>
+                          <br>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/bold.png" title="Bold" alt="Bold" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/italic-regular.png" title="Italic" alt="Italic" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/underline-regular.png" title="Underline" alt="Underline" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/strikethrough-regular.png" title="Strikethrough" alt="Strikethrough" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/font-color-regular.png" title="Font Color" alt="Font Color" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/highlight-regular.png" title="Hightlight" alt="Hightlight" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/align-left-regular.png" title="Align left" alt="Align left" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/align-middle-regular.png" title="Align Middle" alt="Align Middle" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/align-right-regular.png" title="Align Right" alt="Align Right" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/align-justify-regular.png" title="Align Justify" alt="Align Justify" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                            <img src="../assets/Thread Body/smile-regular.png" title="Icons" alt="Icons" style="width: 20px; height: 20px;">
+                          </a>
+                          <a class="btn btn-light" href="#" role="button">
+                          <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"></path>
+                          </svg>
+                          </a>
+                          <hr>
+                          <textarea name="message" class="form-control" rows="5" placeholder="Text Area"></textarea>
+                          <br>
+                          <a href="./forum1.html" class="btn btn-primary">Create Thread</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <p>Copyright &copy; 2020 H|ibiscus. All rights reserved. </p>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 p-0 mb-3"><br><input type="text" class="form-control" placeholder="Search..."> </div>
+            </div>
+            <br>
+            <div class="card mb-3">
+                <div class="card-header pl-0 pr-0">
+                    <div class="row no-gutters w-100 align-items-center">
+                        <div class="col ml-3">Topics</div>
+                        <div class="col-4 text-muted">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">Replies</div>
+                                <div class="col-8">Last update</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body py-3">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">How can i change the username?</a>
+                            <div class="text-muted small mt-1">Started 25 days ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Neon Mandela</a></div>
+                        </div>
+                        <div class="d-none d-md-block col-4">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">12</div>
+                                <div class="media col-8 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                    <div class="media-body flex-truncate ml-2">
+                                        <div class="line-height-1 text-truncate">1 day ago</div> <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Tim cook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="card-body py-3">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">How to change the theme to dark mode?</a> <span class="badge badge-success align-text-bottom ml-1">Solved</span>
+                            <div class="text-muted small mt-1">Started 5 days ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Allize Rome</a></div>
+                        </div>
+                        <div class="d-none d-md-block col-4">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">43</div>
+                                <div class="media col-8 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583319/AAA/3.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                    <div class="media-body flex-truncate ml-2">
+                                        <div class="line-height-1 text-truncate">1 day ago</div> <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Steve smith</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="card-body py-3">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">Is it possible to get the refund of the product i purhcased today?</a> <span class="badge badge-default align-text-bottom ml-1">Locked</span>
+                            <div class="text-muted small mt-1">Started 21 days ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Kane William</a></div>
+                        </div>
+                        <div class="d-none d-md-block col-4">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">42</div>
+                                <div class="media col-8 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                    <div class="media-body flex-truncate ml-2">
+                                        <div class="line-height-1 text-truncate">2 day ago</div> <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Brethwett sonm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="card-body py-3">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">Do you have android application for this tool?</a>
+                            <div class="text-muted small mt-1">Started 56 days ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Glen Maxwell</a></div>
+                        </div>
+                        <div class="d-none d-md-block col-4">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">632</div>
+                                <div class="media col-8 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                    <div class="media-body flex-truncate ml-2">
+                                        <div class="line-height-1 text-truncate">11 day ago</div> <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Neil patels</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="card-body py-3">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">How can i transfer my fund to my friend</a> <span class="badge badge-secondary align-text-bottom ml-1">Closed</span>
+                            <div class="text-muted small mt-1">Started 25 days ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Marry Tom</a></div>
+                        </div>
+                        <div class="d-none d-md-block col-4">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">53</div>
+                                <div class="media col-8 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583336/AAA/4.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                    <div class="media-body flex-truncate ml-2">
+                                        <div class="line-height-1 text-truncate">1 day ago</div> <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Tibok tom</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="m-0">
+                <div class="card-body py-3">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">How can i delete my account?</a> <span class="badge badge-danger align-text-bottom ml-1">Hot!</span>
+                            <div class="text-muted small mt-1">Started 25 days ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">Bob bulmer</a></div>
+                        </div>
+                        <div class="d-none d-md-block col-4">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-4">12</div>
+                                <div class="media col-8 align-items-center"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1574583246/AAA/2.jpg" alt="" class="d-block ui-w-30 rounded-circle">
+                                    <div class="media-body flex-truncate ml-2">
+                                        <div class="line-height-1 text-truncate">1 day ago</div> <a href="javascript:void(0)" class="text-muted small text-truncate" data-abc="true">by Ross taylor</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="pagination mb-5">
+                    <li class="page-item true"><a class="page-link" href="./forum2.html" data-abc="true">«</a></li>
+                    <li class="page-item"><a class="page-link" href="./forum1.html" data-abc="true">1</a></li>
+                    <li class="page-item"><a class="page-link" href="./forum2.html" data-abc="true">2</a></li>
+                    <li class="page-item active"><a class="page-link" href="javascript:void(0)" data-abc="true">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript:void(0)" data-abc="true">»</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>Copyright &copy; 2020 H|ibiscus. All rights reserved. </p>
+            <p> Design by <a href="#" title="H|ibiscus">H|ibiscus Corp.</a>
+        </div>
+    </body>
+</html>
