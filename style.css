@@ -1,0 +1,22 @@
+.jumbotron {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    height: 700px;
+    width: 1350px;
+}
+
+.jumbotron .display-4 {
+    color: rgb(0, 0, 0);
+}
+
+.jumbotron h2 {
+    color: rgb(0, 153, 255);
+}
+
+.jumbotron .display-5 {
+    color: rgb(255, 136, 0);
+}
+
+.container p {
+    color: rgb(255, 0, 0);
+}
