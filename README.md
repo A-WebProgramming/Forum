@@ -21,9 +21,9 @@ Nama Kelompok :
 
 <h2>Fitur Forum :</h2>
 <pre>
-1) Sistem Login 
-2) Multiple Chat
-3) Sistem Notifikasi
+1) + Menu Login & Registrasi
+2) + Menu Forum
+3) Informasi Terbaru dengan kategori yang tersedia.
 </pre>
 
 <p align="center">
