@@ -42,16 +42,3 @@ Nama Kelompok :
 2) + Menu Forum
 3) Informasi Terbaru dengan kategori yang tersedia.
 </pre>
-
-<p align="center">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
-</p>
-
-<p align="center">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
-</p>
-
-<p align="center">
-<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social">
-<img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
-</p>
