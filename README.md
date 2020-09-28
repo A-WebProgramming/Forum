@@ -1,6 +1,8 @@
 <h1>Kelas A Web Programming</h1>
 
-https://github.com/A-WebProgramming/Forum/blob/master/assets/image/Hibiscus.png?raw=true
+<p align="center">
+<img src="https://github.com/A-WebProgramming/Forum/blob/master/assets/image/Hibiscus.png?raw=true"
+</p>
 
 <pre>
 Nama Kelompok :
