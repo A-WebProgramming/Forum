@@ -1,5 +1,20 @@
 <h1>Kelas A Web Programming</h1>
 
+<p align="center">
+<img src="https://github.com/A-WebProgramming/Forum/blob/master/assets/image/Hibiscus.png?raw=true"
+</p>
+
+<p align="center">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/A-Webprogramming/Forum?label=Size%20File">
+</p>
+
+<p align="center">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social">
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
+</p>
+
 <pre>
 Nama Kelompok :
 1) Aldo Valerian (535190044)
@@ -25,16 +40,3 @@ Nama Kelompok :
 2) + Menu Forum
 3) Informasi Terbaru dengan kategori yang tersedia.
 </pre>
-
-<p align="center">
-<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
-</p>
-
-<p align="center">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
-</p>
-
-<p align="center">
-<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social">
-<img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
-</p>
