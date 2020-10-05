@@ -14,7 +14,9 @@
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social">
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
 </p>
-<a align="center" href="https://a-webprogramming.github.io/Forum/index.html">Klick Disini untuk melihat Tempilan Website</a>
+
+<center><a href="https://a-webprogramming.github.io/Forum/index.html">Klick Disini untuk melihat Tempilan Website</a></center>
+
 <pre>
 Nama Kelompok :
 1) Aldo Valerian (535190044)
