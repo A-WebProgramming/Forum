@@ -6,10 +6,8 @@
 
 <p align="center">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
-</p>
-
-<p align="center">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/A-Webprogramming/Forum?label=Size%20File">
 </p>
 
 <p align="center">
