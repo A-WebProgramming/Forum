@@ -6,14 +6,18 @@
 
 <p align="center">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/A-WebProgramming/Forum?style=plastic">
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/A-Webprogramming/Forum?label=Size%20File">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/A-WebProgramming/Forum">
 </p>
 
 <p align="center">
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/A-WebProgramming/Forum?style=social">
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
 </p>
+
+<pre>
+                                   <a href="https://a-webprogramming.github.io/Forum/home.html">Klik Disini untuk melihat Tempilan Website</a>
+</pre>
 
 <pre>
 Nama Kelompok :
