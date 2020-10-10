@@ -15,9 +15,9 @@
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
 </p>
 
-
+<pre>
 <a href="https://a-webprogramming.github.io/Forum/home.html">Klik Disini untuk melihat Tempilan Website</a>
-
+</pre>
 
 <pre>
 Nama Kelompok :
