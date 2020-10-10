@@ -16,7 +16,7 @@
 </p>
 
 
-<center><a href="https://a-webprogramming.github.io/Forum/home.html">Klik Disini untuk melihat Tempilan Website</a></center>
+<a href="https://a-webprogramming.github.io/Forum/home.html">Klik Disini untuk melihat Tempilan Website</a>
 
 
 <pre>
