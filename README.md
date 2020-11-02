@@ -21,11 +21,11 @@
 
 <pre>
 Nama Kelompok :
-1) Aldo Valerian (535190044) - https://github.com/Aldo-V
-2) Rinaldi Revivo (535199191) - https://github.com/Lishux7
-3) Bryan Valentino Jayadi (535190019) - https://github.com/BryanValentinoJayadi
-4) Steven (535190002) https://github.com/angsteven1609
-5) Valentino Puendra (535190011) - https://github.com/ValentinoPuendra
+1) Aldo Valerian (535190044) - (https://github.com/Aldo-V)
+2) Rinaldi Revivo (535199191) - (https://github.com/Lishux7)
+3) Bryan Valentino Jayadi (535190019) - (https://github.com/BryanValentinoJayadi)
+4) Steven (535190002) (https://github.com/angsteven1609)
+5) Valentino Puendra (535190011) - (https://github.com/ValentinoPuendra)
 </pre>
 
 <h1 align="center">Forum</h1> 
