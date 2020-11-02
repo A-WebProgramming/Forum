@@ -15,17 +15,17 @@
 <img alt="GitHub stars" src="https://img.shields.io/github/stars/A-WebProgramming/Forum?style=social">
 </p>
 
-<pre>
-<a href="https://a-webprogramming.github.io/Forum/home.html">Klik Disini untuk melihat Tempilan Website</a>
-</pre>
+<hr>
+<a href="https://a-webprogramming.github.io/Forum/home.html"><p align="center">Klik Disini untuk melihat Tempilan Website<p></a>
+<hr>
 
 <pre>
 Nama Kelompok :
-1) Aldo Valerian (535190044)
-2) Rinaldi Revivo (535199191)
-3) Bryan Valentino Jayadi (535190019)
-4) Steven (535190002)
-5) Valentino Puendra (535190011)
+1) Aldo Valerian (535190044) - (https://github.com/Aldo-V)
+2) Rinaldi Revivo (535199191) - (https://github.com/Lishux7)
+3) Bryan Valentino Jayadi (535190019) - (https://github.com/BryanValentinoJayadi)
+4) Steven (535190002) (https://github.com/angsteven1609)
+5) Valentino Puendra (535190011) - (https://github.com/ValentinoPuendra)
 </pre>
 
 <h1 align="center">Forum</h1> 
