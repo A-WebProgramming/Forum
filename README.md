@@ -17,6 +17,7 @@
 
 <hr>
 <a href="https://a-webprogramming.github.io/Forum/home.html"><p align="center">Klik Disini untuk melihat Tempilan Website<p></a>
+<p align="center">https://a-webprogramming.github.io/Forum/home.html</p>
 <hr>
 
 <pre>

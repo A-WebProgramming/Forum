@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- cdnjs Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
         <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- BOOTSTRAP SCRIPT -->
@@ -35,7 +37,7 @@
               <ul class="navbar-nav mr-auto">
               </ul>
               <form class="form-inline mr-5">
-                <input class="form-control mr-0" type="search" placeholder="Search" aria-label="Search" style="margin-left: auto; margin-right: auto; width: fit-content;">
+                <input class="form-control mr-0" id="myInput" type="search" placeholder="Search" aria-label="Search" style="margin-left: auto; margin-right: auto; width: fit-content;">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                   <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
@@ -43,11 +45,82 @@
                   </svg>
                 </button>
             </form>
-            <a class="btn btn-success" href="../form/form.html" role="button">
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
               <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg>
-              Sign In</a>
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> Sign In
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            <div class="modal-body">
+
+             <!-- Form Control -->
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="validationTooltip02" placeholder="Password" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+              </div>
+              <div class="form-group">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <!-- Form Control -->
+
+            <!-- Script Form Control -->
+            <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+            <!-- Script Form Control -->
+            
+            <!-- Form Control -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+            </div>
+            </div>
             </div>
           </nav>
 
@@ -151,12 +224,13 @@
         </div>
         <br>
 
+        <div id="myinfo">
         <!-- Card Body Information 1 -->
         <div class="card-group">
           <div class="card text-center">
             <img class="card-img-top" src="../assets/Information/topeng-cokelat.jpg" alt="Card image cap" style="margin-left: auto; margin-right: auto; height: 285px;">
             <div class="card-body">
-              <h5 class="card-title">Unik, Ada topeng Malangan dari cokelat, bisa dimakan</h5>
+              <h5 class="card-title"><a href="../Menu/food/topeng.html" style="color: black">Unik, Ada topeng Malangan dari cokelat, bisa dimakan</a></h5>
               <p class="card-text">Olahan cokelat yang diberi nama cokelat Topeng Nareswari itu dijual dengan rentang harga Rp 3.000 hingga Rp 350.000 sesuai dengan ukurannya.</p>
               <a href="../Menu/food/topeng.html" class="btn btn-primary">Read More</a>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -165,13 +239,26 @@
           <div class="card text-center">
             <img class="card-img-top" src="../assets/Information/5-makanan-bandung.jpg" alt="Card image cap" style="margin-left: auto; margin-right: auto; height: 285px;">
             <div class="card-body">
-              <h5 class="card-title">5 Kuliner Mi Legendaris Bandung yang Patut dicoba</h5>
+              <h5 class="card-title"><a href="../Menu/food/kuliner-bandung.html" style="color: black;">5 Kuliner Mi Legendaris Bandung yang Patut dicoba</a></h5>
               <p class="card-text">Kalau sedang berlibur di Bandung, Jawa Barat jangan lupa mencicipi 5 olahan mi legendaris berikut ini.</p>
               <a href="../Menu/food/kuliner-bandung.html" class="btn btn-primary">Read More</a>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
+        </div>
+
+        <script>
+          $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+              var value = $(this).val().toLowerCase();
+              $("#myinfo *").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+              });
+            });
+          });
+        </script>
+
         <br>
         
         <!-- FOOTER -->

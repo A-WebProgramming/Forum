@@ -25,7 +25,7 @@
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"><img src="../assets/image/Logo.png" width="30" height="30" alt=""> H|ibiscus</a>
+            <a class="navbar-brand" href="../home.html"><img src="../assets/image/Logo.png" width="30" height="30" alt=""> H|ibiscus</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link bg-secondary" href="../home.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 </ul>
                   <!-- Notifikation -->
@@ -55,12 +55,150 @@
                     </div>
                   </div>
                     
-                    <!-- Sign In -->
-                    <a class="btn btn-success" href="../form/form.html" role="button">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                          </svg>
-                        Sign In</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg> Sign In
+              </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+              <div class="modal-body">
+  
+               <!-- Form Control -->
+              <form class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="validationTooltip02" placeholder="Password" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+                </div>
+                <div class="form-group">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+              <!-- Form Control -->
+  
+              <!-- Script Form Control -->
+              <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+              <!-- Script Form Control -->
+              
+              <!-- Form Control -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+              </div>
+              </div>
+              </div>
+            
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                        <div class="modal-body">
+            
+                         <!-- Form Control -->
+                        <form class="needs-validation" novalidate>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="validationTooltip02" placeholder="Password" required>
+                            <div class="valid-feedback">
+                              Looks good!
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+                          </div>
+                          <div class="form-group">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <!-- Form Control -->
+            
+                        <!-- Script Form Control -->
+                        <script>
+                          // Example starter JavaScript for disabling form submissions if there are invalid fields
+                          (function() {
+                            'use strict';
+                            window.addEventListener('load', function() {
+                              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                              var forms = document.getElementsByClassName('needs-validation');
+                              // Loop over them and prevent submission
+                              var validation = Array.prototype.filter.call(forms, function(form) {
+                                form.addEventListener('submit', function(event) {
+                                  if (form.checkValidity() === false) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                  }
+                                  form.classList.add('was-validated');
+                                }, false);
+                              });
+                            }, false);
+                          })();
+                          </script>
+                        <!-- Script Form Control -->
+                        
+                        <!-- Form Control -->
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
             </div>
           </nav>
 
@@ -69,162 +207,192 @@
         <div class="d-flex flex-wrap justify-content-between">
             <p>
                 <br>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
-                    </svg> New Thread
-                </button>
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal2" aria-expanded="false" aria-controls="collapseExample">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-pencil-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                  </svg> New Thread
+              </button>
             </p>
             
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body" style="margin-left: 250px; margin-right: 500px;">
-                    <div class="card">
-                        <h5 class="card-header" style="width: 1040px;"><center>New Thread</center></h5>
-                        <div class="card-body">
-                          <!-- Title -->
-                          <h5 class="card-title">Title</h5>
-                          <input type="text" placeholder="" style="width: 1000px;"><br>
-                          <hr>
-                          <!-- Category    -->
-                          <h5 class="card-title">Category</h5>
-                          <div class="form-group">
-                            <select class="custom-select" required>
-                                <option value=""> > Select Category Thread</option>
-                                <option value="1">Discussion</option>
-                                <option value="2">Question</option>
-                                <option value="3">Pool</option>
-                                <option value="4">Galery</option>
-                                <option value="5">Video</option>
-                                <option value="6">Other</option>
-                            </select>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel"></h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                              </button>
                           </div>
-                          <hr>
-                          <!-- Thread Body -->
-                          <h5 class="card-title">Thread Body</h5>
-                            <img src="../assets/Thread Body/font-family-regular.png" title="Font Family" alt="Font Family" style="width: 20px; height: 20px;">
-                          <select>
-                            <option value="">Calibri</option>
-                            <option value="1">Agency FB</option>
-                            <option value="2">Arial</option>
-                            <option value="3">Arial Black</option>
-                            <option value="4">Calibri</option>
-                            <option value="5">Calibri Light</option>
-                            <option value="6">Roman</option>
-                          </select>
-                            <img src="../assets/Thread Body/font-size-regular.png" title="Font Size" alt="Font Size" style="width: 20px; height: 20px;">
-                          <select>
-                            <option value="">12</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                            <option value="22">22</option>
-                            <option value="23">23</option>
-                            <option value="24">24</option>
-                            <option value="25">25</option>
-                            <option value="26">26</option>
-                            <option value="27">27</option>
-                            <option value="28">28</option>
-                            <option value="20">29</option>
-                            <option value="30">30</option>
-                            <option value="31">31</option>
-                            <option value="32">32</option>
-                            <option value="33">33</option>
-                            <option value="34">34</option>
-                            <option value="35">35</option>
-                            <option value="36">36</option>
-                            <option value="37">37</option>
-                            <option value="38">38</option>
-                            <option value="39">39</option>
-                            <option value="40">40</option>
-                            <option value="41">41</option>
-                            <option value="41">42</option>
-                            <option value="43">43</option>
-                            <option value="44">44</option>
-                            <option value="45">45</option>
-                            <option value="46">46</option>
-                            <option value="47">47</option>
-                            <option value="48">48</option>
-                            <option value="49">49</option>
-                            <option value="50">50</option>
-                          </select>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/heading-regular.png" title="Heading" alt="Heading" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/list-ul-regular.png" title="Bullets" alt="Bullets" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/list-ol-regular.png" title="Numbering" alt="Numbering" style="width: 20px; height: 20px;">
-                          </a>
-                          <br>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/bold.png" title="Bold" alt="Bold" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/italic-regular.png" title="Italic" alt="Italic" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/underline-regular.png" title="Underline" alt="Underline" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/strikethrough-regular.png" title="Strikethrough" alt="Strikethrough" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/font-color-regular.png" title="Font Color" alt="Font Color" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/highlight-regular.png" title="Hightlight" alt="Hightlight" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/align-left-regular.png" title="Align left" alt="Align left" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/align-middle-regular.png" title="Align Middle" alt="Align Middle" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/align-right-regular.png" title="Align Right" alt="Align Right" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/align-justify-regular.png" title="Align Justify" alt="Align Justify" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                            <img src="../assets/Thread Body/smile-regular.png" title="Icons" alt="Icons" style="width: 20px; height: 20px;">
-                          </a>
-                          <a class="btn btn-light" href="#" role="button">
-                          <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"></path>
-                          </svg>
-                          </a>
-                          <hr>
-                          <textarea name="message" class="form-control" rows="5" placeholder="Text Area"></textarea>
-                          <br>
-                          <a href="./forum1.html" class="btn btn-primary">Create Thread</a>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <p>Copyright &copy; 2020 H|ibiscus. All rights reserved. </p>
-                        </div>
+                      <div class="modal-body">
+                          <div class="card">
+                              <h5 class="card-header" style="width: auto;"><center>New Thread</center></h5>
+                              <div class="card-body">
+                                <!-- Title -->
+                                <h5 class="card-title">Title</h5>
+                                <input type="text" placeholder="" style="width: 100%;"><br>
+                                <hr>
+                                <!-- Category    -->
+                                <h5 class="card-title">Category</h5>
+                                <div class="form-group">
+                                  <select class="custom-select" required>
+                                      <option value=""> > Select Category Thread</option>
+                                      <option value="1">Discussion</option>
+                                      <option value="2">Question</option>
+                                      <option value="3">Pool</option>
+                                      <option value="4">Galery</option>
+                                      <option value="5">Video</option>
+                                      <option value="6">Other</option>
+                                  </select>
+                                </div>
+                                <hr>
+                                <!-- Thread Body -->
+                                <h5 class="card-title">Thread Body</h5>
+                                  <img src="../assets/Thread Body/font-family-regular.png" title="Font Family" alt="Font Family" style="width: 20px; height: 20px;">
+                                <select>
+                                  <option value="">Calibri</option>
+                                  <option value="1">Agency FB</option>
+                                  <option value="2">Arial</option>
+                                  <option value="3">Arial Black</option>
+                                  <option value="4">Calibri</option>
+                                  <option value="5">Calibri Light</option>
+                                  <option value="6">Roman</option>
+                                </select>
+                                  <img src="../assets/Thread Body/font-size-regular.png" title="Font Size" alt="Font Size" style="width: 20px; height: 20px;">
+                                <select>
+                                  <option value="">12</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                                  <option value="7">7</option>
+                                  <option value="8">8</option>
+                                  <option value="9">9</option>
+                                  <option value="10">10</option>
+                                  <option value="11">11</option>
+                                  <option value="12">12</option>
+                                  <option value="13">13</option>
+                                  <option value="14">14</option>
+                                  <option value="15">15</option>
+                                  <option value="16">16</option>
+                                  <option value="17">17</option>
+                                  <option value="18">18</option>
+                                  <option value="19">19</option>
+                                  <option value="20">20</option>
+                                  <option value="21">21</option>
+                                  <option value="22">22</option>
+                                  <option value="23">23</option>
+                                  <option value="24">24</option>
+                                  <option value="25">25</option>
+                                  <option value="26">26</option>
+                                  <option value="27">27</option>
+                                  <option value="28">28</option>
+                                  <option value="20">29</option>
+                                  <option value="30">30</option>
+                                  <option value="31">31</option>
+                                  <option value="32">32</option>
+                                  <option value="33">33</option>
+                                  <option value="34">34</option>
+                                  <option value="35">35</option>
+                                  <option value="36">36</option>
+                                  <option value="37">37</option>
+                                  <option value="38">38</option>
+                                  <option value="39">39</option>
+                                  <option value="40">40</option>
+                                  <option value="41">41</option>
+                                  <option value="41">42</option>
+                                  <option value="43">43</option>
+                                  <option value="44">44</option>
+                                  <option value="45">45</option>
+                                  <option value="46">46</option>
+                                  <option value="47">47</option>
+                                  <option value="48">48</option>
+                                  <option value="49">49</option>
+                                  <option value="50">50</option>
+                                </select>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/heading-regular.png" title="Heading" alt="Heading" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/list-ul-regular.png" title="Bullets" alt="Bullets" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/list-ol-regular.png" title="Numbering" alt="Numbering" style="width: 20px; height: 20px;">
+                                </a>
+                                <br>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/bold.png" title="Bold" alt="Bold" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/italic-regular.png" title="Italic" alt="Italic" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/underline-regular.png" title="Underline" alt="Underline" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/strikethrough-regular.png" title="Strikethrough" alt="Strikethrough" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/font-color-regular.png" title="Font Color" alt="Font Color" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/highlight-regular.png" title="Hightlight" alt="Hightlight" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/align-left-regular.png" title="Align left" alt="Align left" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/align-middle-regular.png" title="Align Middle" alt="Align Middle" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/align-right-regular.png" title="Align Right" alt="Align Right" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/align-justify-regular.png" title="Align Justify" alt="Align Justify" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                  <img src="../assets/Thread Body/smile-regular.png" title="Icons" alt="Icons" style="width: 20px; height: 20px;">
+                                </a>
+                                <a class="btn btn-light" href="#" role="button">
+                                <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                  <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"></path>
+                                </svg>
+                                </a>
+                                <hr>
+                                <textarea name="message" class="form-control" rows="5" placeholder="Text Area"></textarea>
+                                <br>
+                                
+                              </div>
+                              <div class="card-footer text-muted">
+                                  <p>Copyright &copy; 2020 H|ibiscus. All rights reserved. </p>
+                              </div>
+                            </div>                             
                       </div>
-                </div>
+               <div class="modal-footer">
+              <a href="./forum1.html" class="btn btn-secondary">Close</a>
+              <a href="./forum1.html" class="btn btn-success">Submit</a>
+
               </div>
-              <div class="col-12 col-md-3 p-0 mb-3"><br><input type="text" class="form-control" placeholder="Search..."> </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-12 col-md-3 p-0 mb-3"><br><input type="text" id="myInput" placeholder="Search..."> </div>
+           
+            <!-- Script Search -->
+            <script>
+                $(document).ready(function(){
+                $("#myInput").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                            $("#forum *").filter(function() {
+                            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                        });
+                    });
+                });
+            </script>
+            <!-- Script Search -->
+
             </div>
             <br>
             <div class="card mb-3">
@@ -239,6 +407,7 @@
                         </div>
                     </div>
                 </div>
+                <div id="forum">
                 <div class="card-body py-3">
                     <div class="row no-gutters align-items-center">
                         <div class="col"> <a href="javascript:void(0)" class="text-big" data-abc="true">How can i change the username?</a>
@@ -346,6 +515,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <nav>
                 <ul class="pagination mb-5">
