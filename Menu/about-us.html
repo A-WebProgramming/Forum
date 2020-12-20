@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hibiscus</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <!-- cdnjs Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <!-- BOOTSTRAP SCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- BOXICONS -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="../home.html">
+              <img src="../assets/image/Logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> H|ibiscus</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form class="form-inline mr-5">
+              <input class="form-control mr-0" id="myInput" type="search" placeholder="Search" aria-label="Search" style="margin-left: auto; margin-right: auto; width: fit-content;">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                  <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </button>
+          </form>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg> Sign In
+            </button>
+
+            <!-- Modal  Sign In -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+              <div class="modal-body">
+  
+               <!-- Form Control -->
+              <form class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="validationTooltip02" placeholder="Password" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+                </div>
+                <div class="form-group">
+              </div>
+              <button type="submit" class="btn btn-info">Sign In</button>
+  
+              <button type="button" class="btn btn-success float-right" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal1">Sign Up</button> 
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+              </form>
+              <!-- Form Control -->
+  
+              <!-- Script Form Control -->
+              <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+              <!-- Script Form Control -->
+              
+              <!-- Form Control -->
+              </div>
+              </div>
+              </div>
+              </div>
+  
+            <!-- Modal  Register -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+              <div class="modal-body">
+  
+               <!-- Form Control -->
+              <form class="needs-validation" novalidate>
+                <div class="form-group">
+                  <label for="exampleInputname1">Full Name</label>
+                  <input type="text" class="form-control" id="validationserver01" placeholder="Your Full Name" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email Address" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputname1">Phone Number</label>
+                  <input type="text" class="form-control" id="validationserver02" placeholder="Your Phone Number" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="validationTooltip02" placeholder="Contains alphanumeric (e.g. a-z, 0-9)" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="validationTooltip02" placeholder="Confirm your Password" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <small id="emailHelp" class="form-text text-muted">Never give your password to anyone</small>
+                </div>
+                <div class="form-group">
+                  <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Agree to our <a href="../Privacy Policy & Terms & Condition/Privacy Policy.html" style="color: greenyellow;">Privacy Policy</a> and <a href="../Privacy Policy & Terms & Condition/Terms & Condition.html" style="color: greenyellow;">Terms & Condition</a></label>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                  </div>
+              </div>
+              <button type="submit" class="btn btn-info">Sign Up</button>
+  
+              <button type="button" class="btn btn-success float-right" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Sign In</button> 
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  
+              </form>
+              <!-- Form Control -->
+  
+              <!-- Script Form Control -->
+              <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                          event.preventDefault();
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>
+              <!-- Script Form Control -->
+              
+              <!-- Form Control -->
+              </div>
+              </div>
+              </div>
+              </div>
+
+          </div>
+        </nav>
+
+        <!-- Navs -->
+        <ul class="nav nav-pills  nav-justified justify-content-center bg-dark" id="pills-tab" role="tablist">
+          <li>
+          <a class="nav-item nav-link bg-warning" href="../forum/forum1.html" style="color: white;">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-people-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+          </svg> FORUM</a>
+          </li>
+          <a class="nav-item nav-link bg-secondary" href="../home.html" style="color: white;">HOME</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-secondary" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: white;">Kategori</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="../Menu/news.html">NEWS</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../Menu/food.html">FOOD</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../Menu/travel.html">TRAVEL</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="../Menu/about-us.html">ABOUT-US</a>
+            </div>
+          </li>
+          <a class="nav-item nav-link bg-secondary" href="../Menu/news.html" style="color: white;">NEWS</a>
+          <a class="nav-item nav-link bg-secondary" href="../Menu/food.html" style="color: white;">FOOD  </a>
+          <a class="nav-item nav-link bg-secondary" href="../Menu/travel.html" style="color: white;">TRAVEL</a>
+          <a class="nav-item nav-link bg-primary" href="../Menu/about-us.html" style="color: white;">ABOUT-US</a>
+          </li>
+        </ul>
+
+      <!-- Slide Show -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- Card -->
+            <div class="card bg-dark text-white">
+            <img class="d-block" src="../assets/Information/corona.jpg" alt="News" style="height: 250px; opacity: 0.4;">
+            <div class="card-img-overlay">
+            <h5 style="margin-left: auto; margin-right: auto;"><center>Corona Virus</center></h5>
+            <p style="margin-left: auto; margin-right: auto; text-align: center;">Corona Virus atau severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan gangguan ringan pada sistem pernapasan, infeksi paru-paru yang berat, hingga kematian.</p>
+            </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Card -->
+            <div class="card bg-dark text-white">
+              <img class="d-block" src="../assets/Information/topeng-cokelat.jpg" alt="FOOD" style="height: 250px; opacity: 0.4;">
+              <div class="card-img-overlay">
+              <h5 style="margin-left: auto; margin-right: auto;"><center>Unik, Ada topeng Malangan dari cokelat, bisa dimakan</center></h5>
+              <p style="margin-left: auto; margin-right: auto; text-align: center;">Olahan cokelat yang diberi nama cokelat Topeng Nareswari itu dijual dengan rentang harga Rp 3.000 hingga Rp 350.000 sesuai dengan ukurannya.</p>
+              </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Card -->
+            <div class="card bg-dark text-white">
+              <img class="d-block" src="../assets/Information/5-makanan-bandung.jpg" alt="FOOD" style="height: 250px; opacity: 0.4;">
+              <div class="card-img-overlay">
+              <h5 style="margin-left: auto; margin-right: auto;"><center>5 Kuliner Mi Legendaris Bandung yang Patut dicoba</center></h5>
+              <p style="margin-left: auto; margin-right: auto; text-align: center;">Kalau sedang berlibur di Bandung, Jawa Barat jangan lupa mencicipi 5 olahan mi legendaris berikut ini.</p>
+              </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Card -->
+            <div class="card bg-dark text-white">
+              <img class="d-block" src="../assets/Information/Pulau Bair.jpg" alt="TRAVEL" style="height: 250px; opacity: 0.4;">
+              <div class="card-img-overlay">
+              <h5 style="margin-left: auto; margin-right: auto;"><center>Pulau Bair di Maluku Tenggara, Pulau kosong dengan Alam yang menakjubkan</center></h5>
+              <p style="margin-left: auto; margin-right: auto; text-align: center;">Pulau Bair merupakan pulau tak berpenghuni dengan panorama alam yang indah. Pulau ini kerap disebut mirip Piaynemo di Raja Ampat.</p>
+              </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <!-- Card -->
+            <div class="card bg-dark text-white">
+              <img class="d-block" src="../assets/Information/Berlibur-ke-Thailand.jpg" alt="TRAVEL" style="height: 250px; opacity: 0.4;">
+              <div class="card-img-overlay">
+              <h5 style="margin-left: auto; margin-right: auto;"><center>Berlibur ke Thailand, Kenali Apa yang Boleh dan Tidak boleh dilakukan</center></h5>
+              <p style="margin-left: auto; margin-right: auto; text-align: center;">Mau berwisata ke Thailand? Ketahui dulu hal-hal yang boleh dan tidak boleh dilakukan di sana.</p>
+              </div>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+              <h1 class="display-4">ABOUT US</h1>
+              <img class="card-img" src="../assets/image/Hibiscus.png" style="width: 50%; height: 200px; margin-left: 25%; margin-right: 25%;">
+              <hr>
+              <h2>Tujuan : </h2>
+              <p>1. Mempermudah orang mecari informasi & topik yang di-ingin oleh Pengguna (User)</p>
+              <p>2. Setiap pengguna (User) dapat berkenalan dan membagi setiap pengalaman dan informasi kepada setiap pengguna(User) lainnya.</p>
+              <p>3. Kami ingin memperkecil biaya advertising , dengan adanya forum ini dari berbagai macam pengguna tentu ini sangat membantu orang yang yang baru ingin membuka usaha (Start-Up).</p>
+              <hr>
+              <p class="lead">An Introduction from our H|ibiscus Team</p>
+              <img src="../assets/image/portfolio.jpg">
+              <p></p>
+              <div class="card text-center">
+                <div class="card-header">
+                    <b>H|ibiscus TEAM</b>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><b>ALDO VALERIAN</b></h5>
+                  <h5 class="card-text"><b>535190044</b></h5>
+                  <img src="../assets/image/karakter 1.jpg" style="width: 50%; height: 400px; margin-left: 25%; margin-right: 25%;">
+                </div>
+                <div class="card-footer text-muted">
+                  Mahasiswa
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <b>H|ibiscus TEAM</b>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><b>VALENTINO PUENDRA</b></h5>
+                  <h5 class="card-text"><b>535190011</b></h5>
+                  <img src="../assets/image/karakter 2.jpg" style="width: 50%; height: 400px; margin-left: 25%; margin-right: 25%;">
+                </div>
+                <div class="card-footer text-muted">
+                  Mahasiswa
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <b>H|ibiscus TEAM</b>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><b>BRYAN VALENTINO JAYADI</b></h5>
+                  <h5 class="card-text"><b>535190019</b></h5>
+                  <img src="../assets/image/karakter 3.jpg" style="width: 50%; height: 400px; margin-left: 25%; margin-right: 25%;">
+                </div>
+                <div class="card-footer text-muted">
+                  Mahasiswa
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <b>H|ibiscus TEAM</b>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><b>STEVEN</b></h5>
+                  <h5 class="card-text"><b>535190002</b></h5>
+                  <img src="../assets/image/karakter 4.jpg" style="width: 50%; height: 400px; margin-left: 25%; margin-right: 25%;">
+                </div>
+                <div class="card-footer text-muted">
+                  Mahasiswa
+                </div>
+              </div>
+              <div class="card text-center">
+                <div class="card-header">
+                  <b>H|ibiscus TEAM</b>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title"><b>RINALDI REVIVO</b></h5>
+                  <h5 class="card-text"><b>535199101</b></h5>
+                  <img src="../assets/image/karakter 5.jpg" style="width: 50%; height: 400px; margin-left: 25%; margin-right: 25%;">
+                </div>
+                <div class="card-footer text-muted">
+                  Mahasiswa
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+          <br>
+          <p>Copyright &copy; 2020 H|ibiscus. All rights reserved. </p>
+          <p> Design by H|ibiscus Corp.</p>
+          <!-- <p> Design by <a href="#" title="H|ibiscus">H|ibiscus Corp.</a> -->
+        </div>
+    </body>
+</html>
